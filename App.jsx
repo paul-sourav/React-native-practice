@@ -7,20 +7,23 @@ import HideShow from './components/HideShow';
 import Layout from './components/Layout';
 import Touchable from './components/Touchable';
 import RadioButton from './components/RadioButton';
+import ModalCom from './components/ModalCom';
+
 
 function App() {
   return (
     <ScrollView>
-      <View>
-        <Text style={style.textBox}>Hello</Text>
-      </View>
-      {/* <Mapping/> */}
-      {/* <StatGrid/>  */}
-      <DynaGrid />
-      {/* <HideShow/> */}
-      <Layout />
-      <Touchable/>
-      <RadioButton/>
+        <View>
+          <Text style={style.textBox}>Hello</Text>
+        </View>
+        {/* <Mapping/> */}
+        {/* <StatGrid/>  */}
+        <DynaGrid />
+        {/* <HideShow/> */}
+        <Layout />
+        <Touchable />
+        <RadioButton />
+        <ModalCom/>
     </ScrollView>
   );
 }
