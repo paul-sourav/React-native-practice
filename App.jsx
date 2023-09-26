@@ -1,29 +1,32 @@
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import Mapping from './components/Mapping';
-import StatGrid from './components/StatGrid';
-import DynaGrid from './components/DynaGrid';
-import HideShow from './components/HideShow';
-import Layout from './components/Layout';
-import Touchable from './components/Touchable';
-import RadioButton from './components/RadioButton';
-import ModalCom from './components/ModalCom';
-
+import Login from './pages/Login';
+// import Mapping from './components/Mapping';
+// import StatGrid from './components/StatGrid';
+// import DynaGrid from './components/DynaGrid';
+// import HideShow from './components/HideShow';
+// import Layout from './components/Layout';
+// import Touchable from './components/Touchable';
+// import RadioButton from './components/RadioButton';
+// import ModalCom from './components/ModalCom';
 
 function App() {
   return (
-    <ScrollView>
+    <ScrollView contentContainerStyle={style}>
+      <View>
         <View>
           <Text style={style.textBox}>Hello</Text>
         </View>
         {/* <Mapping/> */}
         {/* <StatGrid/>  */}
-        <DynaGrid />
+        {/* <DynaGrid /> */}
         {/* <HideShow/> */}
-        <Layout />
+        {/* <Layout />
         <Touchable />
-        <RadioButton />
-        <ModalCom/>
+        <RadioButton /> */}
+        {/* <ModalCom /> */}
+        <Login/>
+      </View>
     </ScrollView>
   );
 }

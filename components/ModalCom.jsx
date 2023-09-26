@@ -6,7 +6,7 @@ const ModalCom = () => {
   return (
     <View>
       <Text style={{fontSize: 40}}>Modal</Text>
-      <Modal transparent={true} visible={visibleModal} >
+      <Modal transparent={true} visible={visibleModal}  >
         <View style={styles.modalContainer}>
           <View style={styles.modalView}>
             <Text style={styles.modalText}>This is Modal</Text>
@@ -24,12 +24,16 @@ const ModalCom = () => {
 const styles = StyleSheet.create({
   modalContainer: {
     flex: 1,
+    flexDirection:"row",
     justifyContent: 'center',
     alignItems:"center",
   },
   modalView: {
-    backgroundColor: 'palegreen',
+    flex:1,
+    margin:10,
+    backgroundColor: 'white',
     shadowColor: 'black',
+    padding:20,
     borderRadius: 20,
     elevation: 5,
   },
